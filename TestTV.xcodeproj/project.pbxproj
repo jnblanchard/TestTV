@@ -14,6 +14,10 @@
 		AC14635C1D67BB7C0058C73C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC14635B1D67BB7C0058C73C /* Assets.xcassets */; };
 		AC1463671D67BB7C0058C73C /* TestTVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1463661D67BB7C0058C73C /* TestTVTests.m */; };
 		AC1463721D67BB7C0058C73C /* TestTVUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1463711D67BB7C0058C73C /* TestTVUITests.m */; };
+		AC1463851D67BB880058C73C /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1463801D67BB880058C73C /* TFHpple.m */; };
+		AC1463861D67BB880058C73C /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1463821D67BB880058C73C /* TFHppleElement.m */; };
+		AC1463871D67BB880058C73C /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1463841D67BB880058C73C /* XPathQuery.m */; };
+		AC14638B1D67BBB20058C73C /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC14638A1D67BBB20058C73C /* YTPlayerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,14 @@
 		AC14636D1D67BB7C0058C73C /* TestTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1463711D67BB7C0058C73C /* TestTVUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTVUITests.m; sourceTree = "<group>"; };
 		AC1463731D67BB7C0058C73C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC14637F1D67BB880058C73C /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		AC1463801D67BB880058C73C /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		AC1463811D67BB880058C73C /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		AC1463821D67BB880058C73C /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		AC1463831D67BB880058C73C /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		AC1463841D67BB880058C73C /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		AC1463891D67BBB20058C73C /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		AC14638A1D67BBB20058C73C /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,8 @@
 				AC1463531D67BB7B0058C73C /* AppDelegate.m */,
 				AC1463551D67BB7B0058C73C /* ViewController.h */,
 				AC1463561D67BB7B0058C73C /* ViewController.m */,
+				AC14638C1D67BBB50058C73C /* Youtube Player */,
+				AC1463881D67BB8B0058C73C /* Parse */,
 				AC1463581D67BB7B0058C73C /* Main.storyboard */,
 				AC14635B1D67BB7C0058C73C /* Assets.xcassets */,
 				AC14635D1D67BB7C0058C73C /* Info.plist */,
@@ -135,6 +149,28 @@
 				AC1463731D67BB7C0058C73C /* Info.plist */,
 			);
 			path = TestTVUITests;
+			sourceTree = "<group>";
+		};
+		AC1463881D67BB8B0058C73C /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				AC14637F1D67BB880058C73C /* TFHpple.h */,
+				AC1463801D67BB880058C73C /* TFHpple.m */,
+				AC1463811D67BB880058C73C /* TFHppleElement.h */,
+				AC1463821D67BB880058C73C /* TFHppleElement.m */,
+				AC1463831D67BB880058C73C /* XPathQuery.h */,
+				AC1463841D67BB880058C73C /* XPathQuery.m */,
+			);
+			name = Parse;
+			sourceTree = "<group>";
+		};
+		AC14638C1D67BBB50058C73C /* Youtube Player */ = {
+			isa = PBXGroup;
+			children = (
+				AC1463891D67BBB20058C73C /* YTPlayerView.h */,
+				AC14638A1D67BBB20058C73C /* YTPlayerView.m */,
+			);
+			name = "Youtube Player";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +305,10 @@
 				AC1463571D67BB7B0058C73C /* ViewController.m in Sources */,
 				AC1463541D67BB7B0058C73C /* AppDelegate.m in Sources */,
 				AC1463511D67BB7B0058C73C /* main.m in Sources */,
+				AC1463851D67BB880058C73C /* TFHpple.m in Sources */,
+				AC1463871D67BB880058C73C /* XPathQuery.m in Sources */,
+				AC1463861D67BB880058C73C /* TFHppleElement.m in Sources */,
+				AC14638B1D67BBB20058C73C /* YTPlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
